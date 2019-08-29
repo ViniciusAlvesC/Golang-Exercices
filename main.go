@@ -23,5 +23,5 @@ func main() {
 }
 
 func getINFO(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, r.Method + " " + r.Host + r.URL.Path + "?" + r.URL.RawQuery)
+    fmt.Fprintf(w, r.Method + " " + r.URL.Path + "?" + r.URL.RawQuery)
 }
