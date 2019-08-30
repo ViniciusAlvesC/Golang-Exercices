@@ -9,9 +9,10 @@ Atividades desenvolvidas duranto o 5º semestre, em Desenvolvimento Web.
 2. Digite o comando "go build"
 3. Digite o comando "./<nome-do-executável>"
 
-#### Documentação.
+#### Documentação / Links go.
 * [Pacotes](https://golang.org/pkg/)
 * [HTTP](https://golang.org/pkg/net/http/)
+* [Playground](https://play.golang.org/)
 
 #### Comandos linux.
 
