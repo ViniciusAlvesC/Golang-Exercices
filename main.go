@@ -10,7 +10,7 @@ import (
 func main() {
     go StartServer()
     log.Println("[INFO] Servidor no ar!")
-    time.Sleep(3 * time.Second)
+    time.Sleep(3 * time.Second) //solução provisória
 
 }
 
