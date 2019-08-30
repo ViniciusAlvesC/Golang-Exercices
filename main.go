@@ -12,7 +12,7 @@ func main() {
 	duration, _ := time.ParseDuration("1000ns")
 
 	server := &http.Server{
-			Addr       : "172.22.51.166:8082",
+			Addr       : "192.168.0.5:8082",
 			IdleTimeout: duration,
 		//	Handler    : 
 		}
@@ -23,5 +23,6 @@ func main() {
 }
 
 func getINFO(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, r.Method + " " + r.URL.Path + "?" + r.URL.RawQuery)
+    qurl := r.URL.String()
+    fmt.Fprintf(w, r.Method + " " + qurl)
 }
