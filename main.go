@@ -20,7 +20,7 @@ func StartServer() {
   duration, _ := time.ParseDuration("1000ns")
 
 	server := &http.Server{
-			Addr       : "10.120.34.128:8082",
+			Addr       : "192.168.0.5:8082",
 			IdleTimeout: duration,
 		//	Handler    : 
 		}
