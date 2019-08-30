@@ -2,30 +2,30 @@ package main
 
 
 import (
-		 "net/http"
-		 "time"
-		 "fmt"  )
+    "net/http"
+    "time"
+    "fmt")
 
 func main() {
-	StartServer()
+    StartServer()
 
 }
 
-func getINFO(w http.ResponseWriter, r *http.Request) {
-    qurl := r.URL.String()
+func getINFO(w http.ResponseWriter, r * http.Request) {
+    qurl: = r.URL.String()
     fmt.Fprintf(w, r.Method + " " + qurl)
 }
 
 func StartServer() {
-  duration, _ := time.ParseDuration("1000ns")
+    duration, _: = time.ParseDuration("1000ns")
 
-	server := &http.Server{
-			Addr       : "192.168.0.5:8082",
-			IdleTimeout: duration,
-		//	Handler    : 
-		}
+    server: = & http.Server {
+        Addr: "192.168.0.5:8082",
+        IdleTimeout: duration,
+        //	Handler    : 
+    }
 
-	http.HandleFunc("/", getINFO)
+    http.HandleFunc("/", getINFO)
 
-	server.ListenAndServe()
+    server.ListenAndServe()
 }
