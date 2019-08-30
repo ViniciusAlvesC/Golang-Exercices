@@ -24,6 +24,7 @@ Atividades desenvolvidas duranto o 5º semestre, em Desenvolvimento Web.
 * cd (Acessar diretório)
 * ls (lista os arquivos do diretório)
 * mkdir (Criar um diretório)
+* touch (Cria um arquivo)
 * rm (Remove um diretório)
 * mv (Move arquivo do diretório)
 
